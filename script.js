@@ -10,9 +10,9 @@
  });
 
 //  Join Us Button
-function handleJoinUs() {
-    alert("Thank you for signing up!");
-    // Here you can add additional functionality like showing a sign-up form or redirecting to another page
+function redirectToPage() {
+    // Change the URL to the desired page
+    window.location.href = "http://127.0.0.1:5500/signup.html";
 }
 // Sidebar
     function showSidebar(){

@@ -48,3 +48,11 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+.logo{
+    display: flex;
+    justify-content: center;
+}
+.logo img{
+    width: 250px;
+    height: 100px;
+}
