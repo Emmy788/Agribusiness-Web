@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmtastic Contact Page</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/contact.css">
+
+    <!-- FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/e405f872e6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header NavBar -->
+    <header> 
+        <nav>
+            <img src="logos/Screenshot_14-3-2024_155557_looka.com.jpeg" alt="header-logo">
+            <ul class="header-nav">
+                <li class="hideOnMobile"><a href="home.html" class="active">Home</a></li>
+                <li class="hideOnMobile"><a href="about.html">About</a></li>
+                <li class="hideOnMobile"><a href="features.html">Features</a></li>
+                <li class="hideOnMobile"><a href="features.html#services">Services</a></li>
+                <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+
+                <div class="header-icons">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <li class="menu-btn" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+                
+            </ul> 
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="features.html#services">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>        
+        </nav>
+    </header>
+
+    <!-- Contact section-->
+    <section id="contact" class="hidden">
+        <h2>Contact</h2>
+        <div class="team">
+            <h3 class="contact-title">Meet Our FARMtastic team!</h3>
+            <div class="team-row">
+                <div class="card-deck">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <div class="img-box">
+                            <img src="images/contact-1.jpeg" alt="Veterinary Doctor" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h3 class="h3-responsive">Dr. Philip Ambani</h3>
+                            </div>
+                            <div class="card-subtitle">
+                                <h5>Veteranian</h5>
+                            </div>
+                            <div class="card-text">
+                                <p>Specializes in cattle and poultry.</p>
+                            </div>
+                            <div class="team-socials">
+                                <i class="fa-brands fa-facebook-f" data-toggle="tooltip" title="Like on Facebook" aria-hidden="true"></i>
+                                <i class="fa-brands fa-twitter" data-toggle="tooltip" title="Follow on Twitter" aria-hidden="true"></i>
+                                <i class="fa-brands fa-instagram" data-toggle="tooltip" title="Follow on Instagram" aria-hidden="true"></i>
+                                <i class="fa-brands fa-linkedin-in" data-toggle="tooltip" title="Add on Linkedin" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="card">
+                        <div class="img-box">
+                            <img src="images/contact-2.jpeg" alt="Farm Consultant" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h3 class="h3-responsive">Dr. Charles wegure</h3>
+                            </div>
+                            <div class="card-subtitle">
+                                <h5>Farm Consultant</h5>
+                            </div>
+                            <div class="card-text">
+                                <p>Specializes in well-being of the farm.</p>
+                            </div>
+                            <div class="team-socials">
+                                <i class="fa-brands fa-facebook-f" data-toggle="tooltip" title="Like on Facebook" aria-hidden="true"></i>
+                                <i class="fa-brands fa-twitter" data-toggle="tooltip" title="Follow on Twitter" aria-hidden="true"></i>
+                                <i class="fa-brands fa-instagram" data-toggle="tooltip" title="Follow on Instagram" aria-hidden="true"></i>
+                                <i class="fa-brands fa-linkedin-in" data-toggle="tooltip" title="Add on Linkedin" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="card">
+                        <div class="img-box">
+                            <img src="images/contact-3.jpeg" alt="Soil Scientist" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h3 class="h3-responsive">Dr. Cecilia Ombuya</h3>
+                            </div>
+                            <div class="card-subtitle">
+                                <h5>Soil Scientist</h5>
+                            </div>
+                            <div class="card-text">
+                                <p>Offers soil expertise for a healthy farm.</p>
+                            </div>
+                            <div class="team-socials">
+                                <i class="fa-brands fa-facebook-f" data-toggle="tooltip" title="Like on Facebook" aria-hidden="true"></i>
+                                <i class="fa-brands fa-twitter" data-toggle="tooltip" title="Follow on Twitter" aria-hidden="true"></i>
+                                <i class="fa-brands fa-instagram" data-toggle="tooltip" title="Follow on Instagram" aria-hidden="true"></i>
+                                <i class="fa-brands fa-linkedin-in" data-toggle="tooltip" title="Add on Linkedin" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="card">
+                        <div class="img-box">
+                            <img src="images/contact-4.jpeg" alt="Marketing Specialist" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h3 class="h3-responsive">Dr. Joy Ndeti</h3>
+                            </div>
+                            <div class="card-subtitle">
+                                <h5>Marketing Specialist</h5>
+                            </div>
+                            <div class="card-text">
+                                <p>Has expertise on selling farm produce.</p>
+                            </div>
+                            <div class="team-socials">
+                                <i class="fa-brands fa-facebook-f" data-toggle="tooltip" title="Like on Facebook" aria-hidden="true"></i>
+                                <i class="fa-brands fa-twitter" data-toggle="tooltip" title="Follow on Twitter" aria-hidden="true"></i>
+                                <i class="fa-brands fa-instagram" data-toggle="tooltip" title="Follow on Instagram" aria-hidden="true"></i>
+                                <i class="fa-brands fa-linkedin-in" data-toggle="tooltip" title="Add on Linkedin" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="feedback">
+            <p>For any inquiries, you are free to send us a feed back by filling the form below:</p><br>
+            <form>
+                <label>Full name:</label>
+                <div class="input-group">
+                    <input type="text" placeholder="Enter your fullname">
+                    <i class="fa-regular fa-user"></i>
+                </div>
+                <label>Email:</label>
+                <div class="input-group">
+                    <input type="text" placeholder="Enter your email address">
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+                <label>Message:</label>
+                <div class="input-group">
+                    <textarea rows="7" cols="25" placeholder="Write here"></textarea>
+                </div>
+                <button class="submit"> Submit</button>
+            </form>
+        </div>
+       
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-logo">
+            <img src="logos/Screenshot_14-3-2024_155557_looka.com.jpeg" alt="header-logo">
+        </div>
+        <p>Copyright © 2023 Agricultural Website</p>
+    </footer> 
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Contact -->
+<section id="contact" class="hidden">
+    <h2>Contact</h2>
+    <div class="team">
+        <h3 class="contact-title">Meet Our FARMtastic team!</h3>
+        <div class="team-row">
+            <div class="card-deck">
+                <!-- Card 1 -->
+                <div class="card">
+                    <div class="img-box">
+                        <img src="images/contact-1.jpeg" alt="Veterinary Doctor" class="img-fluid">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3 class="h3-responsive">Dr. Philip Ambani</h3>
+                        </div>
+                        <div class="card-subtitle">
+                            <h5>Veteranian</h5>
+                        </div>
+                        <div class="card-text">
+                            <p>Specializes in cattle and poultry.</p>
+                        </div>
+                        <div class="team-socials">
+                            <i class="fa-brands fa-facebook-f" data-toggle="tooltip" title="Like on Facebook" aria-hidden="true"></i>
+                            <i class="fa-brands fa-twitter" data-toggle="tooltip" title="Follow on Twitter" aria-hidden="true"></i>
+                            <i class="fa-brands fa-instagram" data-toggle="tooltip" title="Follow on Instagram" aria-hidden="true"></i>
+                            <i class="fa-brands fa-linkedin-in" data-toggle="tooltip" title="Add on Linkedin" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card">
+                    <div class="img-box">
+                        <img src="images/contact-2.jpeg" alt="Farm Consultant" class="img-fluid">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3 class="h3-responsive">Dr. Charles wegure</h3>
+                        </div>
+                        <div class="card-subtitle">
+                            <h5>Farm Consultant</h5>
+                        </div>
+                        <div class="card-text">
+                            <p>Specializes in well-being of the farm.</p>
+                        </div>
+                        <div class="team-socials">
+                            <i class="fa-brands fa-facebook-f" data-toggle="tooltip" title="Like on Facebook" aria-hidden="true"></i>
+                            <i class="fa-brands fa-twitter" data-toggle="tooltip" title="Follow on Twitter" aria-hidden="true"></i>
+                            <i class="fa-brands fa-instagram" data-toggle="tooltip" title="Follow on Instagram" aria-hidden="true"></i>
+                            <i class="fa-brands fa-linkedin-in" data-toggle="tooltip" title="Add on Linkedin" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card">
+                    <div class="img-box">
+                        <img src="images/contact-3.jpeg" alt="Soil Scientist" class="img-fluid">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3 class="h3-responsive">Dr. Cecilia Ombuya</h3>
+                        </div>
+                        <div class="card-subtitle">
+                            <h5>Soil Scientist</h5>
+                        </div>
+                        <div class="card-text">
+                            <p>Offers soil expertise for a healthy farm.</p>
+                        </div>
+                        <div class="team-socials">
+                            <i class="fa-brands fa-facebook-f" data-toggle="tooltip" title="Like on Facebook" aria-hidden="true"></i>
+                            <i class="fa-brands fa-twitter" data-toggle="tooltip" title="Follow on Twitter" aria-hidden="true"></i>
+                            <i class="fa-brands fa-instagram" data-toggle="tooltip" title="Follow on Instagram" aria-hidden="true"></i>
+                            <i class="fa-brands fa-linkedin-in" data-toggle="tooltip" title="Add on Linkedin" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="card">
+                    <div class="img-box">
+                        <img src="images/contact-4.jpeg" alt="Marketing Specialist" class="img-fluid">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3 class="h3-responsive">Dr. Joy Ndeti</h3>
+                        </div>
+                        <div class="card-subtitle">
+                            <h5>Marketing Specialist</h5>
+                        </div>
+                        <div class="card-text">
+                            <p>Has expertise on selling farm produce.</p>
+                        </div>
+                        <div class="team-socials">
+                            <i class="fa-brands fa-facebook-f" data-toggle="tooltip" title="Like on Facebook" aria-hidden="true"></i>
+                            <i class="fa-brands fa-twitter" data-toggle="tooltip" title="Follow on Twitter" aria-hidden="true"></i>
+                            <i class="fa-brands fa-instagram" data-toggle="tooltip" title="Follow on Instagram" aria-hidden="true"></i>
+                            <i class="fa-brands fa-linkedin-in" data-toggle="tooltip" title="Add on Linkedin" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="feedback">
+        <p>For any inquiries, you are free to send us a feed back by filling the form below:</p><br>
+        <form>
+            <label>Full name:</label>
+            <div class="input-group">
+                <input type="text" placeholder="Enter your fullname">
+                <i class="fa-regular fa-user"></i>
+            </div>
+            <label>Email:</label>
+            <div class="input-group">
+                <input type="text" placeholder="Enter your email address">
+                <i class="fa-regular fa-envelope"></i>
+            </div>
+            <label>Message:</label>
+            <div class="input-group">
+                <textarea rows="7" cols="25" placeholder="Write here"></textarea>
+            </div>
+            <button class="submit"> Submit</button>
+        </form>
+    </div>  
+</section>

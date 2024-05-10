@@ -1,0 +1,138 @@
+/* General css */
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+html{ 
+    overflow-x: hidden;
+ } 
+body {
+    min-height: 100vh;
+    width: 100%;
+    font-size: 19px;
+}
+h2{
+    font-size: 50px;
+    color: rgb(101, 204, 101);
+    font-weight: 600;
+}
+section{
+    min-height: 100vh;
+   padding: 7rem 7% 2rem;
+   display: grid;
+   align-content: center;
+   place-items: center;
+}
+
+
+@media(max-width: 740px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-btn{
+        display: flex;
+    }
+    header.scrolled img{
+        width: 120px;
+    }
+}
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+
+/* Main Section
+section h2{
+    text-align: center;
+} */
+ 
+/*To-top Button */
+.to-top {
+    background: rgb(101, 204, 101);
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+.to-top.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+} 
+
+/* Scroll animation */
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+.services:nth-child(2) {
+    transition-delay: 200ms;
+}
+.services:nth-child(3) {
+    transition-delay: 400ms;
+}
+.services:nth-child(4) {
+    transition-delay: 600ms;
+}
+
+@media(prefers-reduced-motion) { 
+    .hidden{
+        transition: none;
+    } 
+ }
+
+ .column:nth-child(1) {
+    transition-delay: 200ms;
+ }
+ .column:nth-child(2) {
+    transition-delay: 400ms;
+ }
+ .column:nth-child(3) {
+    transition-delay: 600ms;
+ }
+
+ 
+/* Footer
+footer{
+    background-color:  #e9ecef;
+    padding: 3px;
+    text-align: center;
+    display: flex;
+    margin-top: 240px;
+}
+.footer-logo img{
+    width: 200px;
+    height: 90px;
+}
+.footer-logo{
+    display: flex;
+}
+footer p{
+    margin-top: 20px;
+} */

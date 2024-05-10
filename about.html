@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmtastic About page</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/general.css">
+
+    <!-- FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/e405f872e6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header section -->
+    <header> 
+        <nav>
+            <img src="logos/Screenshot_14-3-2024_155557_looka.com.jpeg" alt="header-logo">
+            <ul class="header-nav">
+                <li class="hideOnMobile"><a href="home.html">Home</a></li>
+                <li class="hideOnMobile"><a href="about.html" class="active">About</a></li>
+                <li class="hideOnMobile"><a href="features.html">Features</a></li>
+                <li class="hideOnMobile"><a href="features.html#services">Services</a></li>
+                <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+                <div class="header-icons">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <li class="menu-btn" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+                
+            </ul> 
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="features.html#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>        
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="hidden">
+        <div class="top-section">
+            <div class="about-info">
+                <h2>About</h2>
+            <p>We are a small agricultural business dedicated to sustainable farming practices.We specialize in giving you farm tips to get fresh organic produce and to keep your livestock and poultry in good shape and healthy for <span>FARMtastic</span> produce!</p>
+            <p>You can also use this website to buy organic fertilizer and also rent a modern tractor for your farm and get a chance to connect with other farmers and our best team of Agribusiness Experts.</p>
+            <button> Contact us</button>
+            </div>
+            <div class="about-video">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/eNFW186Ox3s?si=MnIKgrFUhLARBVVU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="bottom-section">
+            <div class="container hidden">
+                <i class="fa-solid fa-star"></i>
+                <span class="num" data-val="45">000</span>
+                <span class="text">Our Experience</span>
+            </div>
+            <div class="container hidden">
+                <i class="fa-solid fa-users-gear"></i>
+                <span class="num" data-val="92">000</span>
+                <span class="text">Farm Specialists</span>
+            </div>
+            <div class="container hidden">
+                <i class="fa-solid fa-check-double"></i>
+                <span class="num" data-val="270">000</span>
+                <span class="text">Workshops</span>
+            </div>
+            <div class="container hidden">
+                <i class="fa-solid fa-face-smile-beam"></i>
+                <span class="num" data-val="420">000</span>
+                <span class="text">Happy Clients</span>
+            </div>
+        </div>
+    </section> 
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-logo">
+            <img src="logos/Screenshot_14-3-2024_155557_looka.com.jpeg" alt="header-logo">
+        </div>
+        <p>Copyright © 2023 Agricultural Website</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

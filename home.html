@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmtastic Landing Page</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/general.css">
+
+    <!-- FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/e405f872e6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header NavBar -->
+    <header> 
+        <nav>
+            <img src="logos/Screenshot_14-3-2024_155557_looka.com.jpeg" alt="header-logo">
+            <ul class="header-nav">
+                <li class="hideOnMobile"><a href="home.html" class="active">Home</a></li>
+                <li class="hideOnMobile"><a href="about.html">About</a></li>
+                <li class="hideOnMobile"><a href="features.html">Features</a></li>
+                <li class="hideOnMobile"><a href="features.html#services">Services</a></li>
+                <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+                <div class="header-icons">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <li class="menu-btn" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+                
+            </ul> 
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="features.html#services">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>        
+        </nav>
+    </header> 
+    
+        <!-- Landing Page Section -->
+        <section id="home">
+            <div class="outer">
+                <div class="details">
+                    <h1>Welcome to <span>FARMTASTIC!</span></h1>
+                    <h3>Give your farm a chance to flourish and <br><span>GLOW GREEN!</span></h3>
+                    <div class="center">
+                        <button id="show-login">Join Us</button>
+                    </div>
+                </div>
+            </div>   
+        </section>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

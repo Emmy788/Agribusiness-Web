@@ -1,0 +1,128 @@
+/* Features */
+.photo-gallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+.column img{
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
+@media only screen and (max-width: 769px){
+    .photo-gallery{
+        flex-direction: column;
+    }
+    .column{
+        width: 80%;
+    }
+}
+
+/* Services */
+#services{
+    display: inline-block;
+    text-align: center;
+    margin-top: 70px;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.services img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    height: 300px;
+    transition: transform 0.5s;
+}
+.services:hover img{
+    transform: scale(1.1);
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.3), rgb(101, 204, 101)) ;
+    color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    text-wrap:wrap;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.services:hover .layer{
+    height: 100%; 
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid black;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: black;
+    background: #e2e4e5;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: rgb(101, 204, 101);
+    color: #fff;
+}
+
+/* Footer */
+footer{
+    background-color:  #e9ecef;
+    padding: 3px;
+    text-align: center;
+    display: flex;
+}
+.footer-logo img{
+    width: 200px;
+    height: 90px;
+}
+.footer-logo{
+    display: flex;
+}
+footer p{
+    margin: 20px 200px;
+}
+ 

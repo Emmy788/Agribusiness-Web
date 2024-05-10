@@ -1,0 +1,119 @@
+/* Contact */
+#contact{
+    display: inline-block;
+}
+#contact h2{
+    text-align: center;
+}
+.contact-title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    border-bottom: #afb7be solid 1px;
+}
+.team-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-fluid{
+    width: 230px;
+    height: 230px;
+}
+.card-deck{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    vertical-align: top;
+
+}
+.card{
+    border-radius: 10px;
+    margin-right: 50px;
+    position: relative;
+    overflow: hidden;
+    border: #d3d8d3 solid 2px;
+    transition: border .4s;
+    background: #e5ecf3;
+}
+.card:hover{
+    border: rgb(101, 204, 101) solid 3px;
+}
+.card-text {
+    font-size: 15px;
+}
+.team-socials i{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 25px;
+    transition: color .4s;
+}
+.team-socials i:hover{
+    color: rgb(101, 204, 101);
+}
+.card-body{
+    margin-left: 10px;
+}
+.feedback{
+    margin-top: 40px;
+    
+}
+form{
+    display: inline-block;
+}
+.input-group i{
+    margin-left: 10px;
+
+}
+.input-group{ 
+    padding: 15px;
+    border: #a49f9f solid 1px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+label{
+    font-weight: 500;
+}
+@media only screen and (max-width: 769px){
+    .card-deck{
+        flex-direction: column;
+    }
+    .card{
+        width: 80%;
+        margin-bottom: 10px;
+    }
+}
+.submit{
+    background: green;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    color: #fff;
+    transition: color .4s ease-in-out;
+}
+.submit:hover{
+    color: green;
+    background: #fff;
+    border: 1px solid green;
+}
+/* Footer */
+footer{
+    background-color:  #e9ecef;
+    padding: 3px;
+    text-align: center;
+    display: flex;
+}
+.footer-logo img{
+    width: 200px;
+    height: 90px;
+}
+.footer-logo{
+    display: flex;
+}
+footer p{
+    margin:20px 200px;
+}

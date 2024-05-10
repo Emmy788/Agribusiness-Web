@@ -9,6 +9,11 @@
      }
  });
 
+//  Join Us Button
+function handleJoinUs() {
+    alert("Thank you for signing up!");
+    // Here you can add additional functionality like showing a sign-up form or redirecting to another page
+}
 // Sidebar
     function showSidebar(){
         const sidebar = document.querySelector('.sidebar')
